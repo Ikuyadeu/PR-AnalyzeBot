@@ -1,5 +1,5 @@
 # 環境の作成の仕方
-1. 最新のnodeとnpmを用意する．　[Macの場合](https://johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/)　実行には`sudo`を入れた方が確実
+1. 最新のnodeとnpmを用意する．　[Macの場合](http://umekov.hatenablog.com/entry/2016/12/03/000001)　
 2. 上田のリポジトリからプロジェクトをクローンする
 ```
 git clone https://github.com/Ikuyadeu/PR-AnalyzeBot.git
@@ -8,7 +8,7 @@ git clone https://github.com/Ikuyadeu/PR-AnalyzeBot.git
     3.1 `GitHub App name`:好きな名前（後から帰れる）
     * `Homepage URL`:http://localhost:1410
     * `User authorization callback URL`:http://localhost:1410/auth.callback
-    * `Webhook URL`:https://example.com(すぐ編集する)
+    * `Webhook URL`:https://example.com　(すぐ編集する)
     * `Webhook secret`:development
     * `Permissions`:全部チェック（Single fileは`.github/*`）
     * 最後の`where can this GitHub App be installed?`は`Only on this account` のまま
@@ -30,5 +30,10 @@ SUBDOMAIN=適当な英数字(記号は使えない)
     * `https://xxxx.localtunnel.me/`というのが表示されるのでGitHub　AppsのWebhookをそれに書き換える．
 9. もう一度`$ npm start`
 9. Appsページの右上の`install`ボタンで自分のプロジェクトにインストールする．
-10. 適当にissueを作る
-11. うまく動いたら成功
+    * `only select repository`にチェック
+10. インストールしたプロジェクトで適当にissueを作る
+11. ページを再読み込みしbotが発言していたら成功
+
+## 開発に使えるGitHub関連ページ
+* https://developer.github.com/webhooks/
+* https://developer.github.com/v3/pulls/
