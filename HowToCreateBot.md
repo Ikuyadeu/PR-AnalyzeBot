@@ -36,6 +36,7 @@ SUBDOMAIN=適当な英数字(-などの記号は使えない)
 7. プロジェクトのルートで`$ npm install`を実行
 8. プロジェクトのルートで`$ npm start`を実行
     * `https://xxxx.localtunnel.me/`というのが表示されるのでGitHub AppsのWebhookをそれに書き換える．
+    * `Ctrl + C`
 9. もう一度`$ npm start`
 9. Appsページの右上の`install`ボタンで自分のプロジェクトにインストールする．（プロジェクトを持ってなければ作る(public推奨)）
     * `only select repository`にチェック
