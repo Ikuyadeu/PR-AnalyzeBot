@@ -1,5 +1,5 @@
 # 環境の作成の仕方
-1. 最新のnodeとnpmを用意する．　[Macの場合](http://umekov.hatenablog.com/entry/2016/12/03/000001)　
+1. 最新のnodeとnpmを用意する．Macの場合：http://umekov.hatenablog.com/entry/2016/12/03/000001
 
 ```
 node -v
@@ -12,8 +12,8 @@ nodeが7.7.0，npmが4.0.0以上なら成功
 ```
 git clone https://github.com/Ikuyadeu/PR-AnalyzeBot.git
 ```
-3. [GitHub Apps](https://github.com/settings/apps/new)に登録する．
-    3.1 `GitHub App name`:好きな名前（後から帰れる）
+3. [GitHub Apps](https://github.com/settings/apps/new)を作成する．
+    3.1 `GitHub App name`:好きな名前（後から変更できる）
     * `Homepage URL`:http://localhost:1410
     * `User authorization callback URL`:http://localhost:1410/auth.callback
     * `Webhook URL`:https://example.com　(後ですぐ変える)
