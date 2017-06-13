@@ -20,7 +20,7 @@ git clone https://github.com/Ikuyadeu/PR-AnalyzeBot.git
     * `Webhook secret`:development
     * `Permissions`:全部チェック(Single fileは`.github/*`)
     * 最後の`where can this GitHub App be installed?`は`Only on this account` のまま
-4. ページの一番下に行って`Generate private key`ボタンを押してxxx.pemをダウンロードして，プロジェクトのルートに置く
+4. ページの一番下に行って`Generate private key`ボタンを押してxxx.pemをダウンロードして，プロジェクトのルートに置く
 6. プロジェクトのルートに`.env`というファイルを作る
 中身は
 ```
