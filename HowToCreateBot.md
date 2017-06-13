@@ -1,6 +1,6 @@
 # 環境の作成の仕方
 1. 最新のnodeとnpmを用意する．　[Macの場合](http://umekov.hatenablog.com/entry/2016/12/03/000001)　
-
+
 ```
 node -v
 npm -v
@@ -16,11 +16,11 @@ git clone https://github.com/Ikuyadeu/PR-AnalyzeBot.git
     3.1 `GitHub App name`:好きな名前（後から帰れる）
     * `Homepage URL`:http://localhost:1410
     * `User authorization callback URL`:http://localhost:1410/auth.callback
-    * `Webhook URL`:https://example.com　(後ですぐ変える)
+    * `Webhook URL`:https://example.com　(後ですぐ変える)
     * `Webhook secret`:development
-    * `Permissions`:全部チェック(Single fileは`.github/*`)
+    * `Permissions`:全部チェック(Single fileは`.github/*`)
     * 最後の`where can this GitHub App be installed?`は`Only on this account` のまま
-4. ページの一番下に行って`Generate private key`ボタンを押してxxx.pemをダウンロードして，プロジェクトのルートに置く
+4. ページの一番下に行って`Generate private key`ボタンを押してxxx.pemをダウンロードして，プロジェクトのルートに置く
 6. プロジェクトのルートに`.env`というファイルを作る
 中身は
 ```
@@ -28,14 +28,14 @@ APP_ID=作ったページの右上にある４桁の数字
 WEBHOOK_SECRET=development
 
 # Uncomment this to get verbose logging
-# LOG_LEVEL=trace
+# LOG_LEVEL=trace
 
 # Subdomain to use for localtunnel server. Defaults to your local username.
 SUBDOMAIN=適当な英数字(-などの記号は使えない)
 ```
 7. プロジェクトのルートで`$ npm install`を実行
 8. プロジェクトのルートで`$ npm start`を実行
-    * `https://xxxx.localtunnel.me/`というのが表示されるのでGitHub AppsのWebhookをそれに書き換える．
+    * `https://xxxx.localtunnel.me/`というのが表示されるのでGitHub AppsのWebhookをそれに書き換える．
 9. もう一度`$ npm start`
 9. Appsページの右上の`install`ボタンで自分のプロジェクトにインストールする．（プロジェクトを持ってなければ作る(public推奨)）
     * `only select repository`にチェック
