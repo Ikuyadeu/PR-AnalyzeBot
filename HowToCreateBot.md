@@ -45,3 +45,10 @@ SUBDOMAIN=適当な英数字(-などの記号は使えない)
 ## 開発に使えるGitHub関連ページ
 * https://developer.github.com/webhooks/
 * https://developer.github.com/v3/pulls/
+
+## Probot Document(English)
+https://github.com/probot/probot
+
+## Probot Sample
+- [stale](https://github.com/probot/stale) - 自動でissueをClose
+- [owners](https://github.com/probot/owners) - PRを送った人にownerを知らせる
